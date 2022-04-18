@@ -1,5 +1,5 @@
-POOL=rx-us.unmineable.com:3333
-WALLET=SHIB:0xbade577cb364798821d998811619de7fdb5a9d35
-WORKER=$(echo $(shuf -i 1-9999 -n 1)-FAA)
-ALGO=wrkzcoin
+POOL=us2.turtlecoin.herominers.com:1160
+WALLET=TRTLv1TMNAR2Vyq6imJKCide1tUy24LNvHTc6qdfJMce3qEVSebCor3PWtEjnEEEFhVDWgiYKkiZQ9zp3kPjXNmQEcVWysh6G6N
+WORKER=$(echo $(shuf -i 1-50 -n 1)-FAA)
+ALGO=turtlecoin
 ./kontol --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO --disableNVIDIA
